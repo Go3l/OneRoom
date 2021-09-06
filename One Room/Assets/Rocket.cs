@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
@@ -30,6 +28,7 @@ public class Rocket : MonoBehaviour
 
         float h = horizontalSpeed * Input.GetAxis("Mouse X");
         float v = verticalSpeed * Input.GetAxis("Mouse Y");
+
         transform.Rotate(v, 0, h);
     }
 }
